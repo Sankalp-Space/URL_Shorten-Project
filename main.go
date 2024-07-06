@@ -91,7 +91,7 @@ func main() {
 	http.HandleFunc("/", handler)
 	http.HandleFunc("/shorten", shortURLhandler)
 	http.HandleFunc("/redirect/", redirectHandler)
-	//start the HTTP server on port 4000
+	//start the HTTP server on port 3000
 	fmt.Println("Starting server on port 3000.....")
 	err := http.ListenAndServe(":3000", nil)
 	if err != nil {
